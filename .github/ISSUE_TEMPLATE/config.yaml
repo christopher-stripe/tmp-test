@@ -1,0 +1,12 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Stripe Support
+    url: https://support.stripe.com/contact
+      https://support.stripe.com/contact/login
+    about: |
+      This project is a very thin loading wraper around Stripe.js. Please only file issues here that you believe represent bugs with the loader, not Stripe.js itself.
+
+      If you're having general trouble with Stripe.js or your Stripe integration, please reach out to us using the form at https://support.stripe.com/email or come chat with us on the Stripe Discord server. We're very proud of our level of service, and we're more than happy to help you out with your integration.
+  - name: GitHub Security Bug Bounty
+    url: https://bounty.github.com/
+    about: Please report security vulnerabilities here.
