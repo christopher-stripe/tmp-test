@@ -16,7 +16,6 @@ body:
     attributes:
       label: What happened?
       description: Please include what you were trying to accomplish, and what happened instead.
-      value: ""
     validations:
       required: true
   - type: input
