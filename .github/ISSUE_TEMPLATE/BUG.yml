@@ -1,5 +1,5 @@
 name: Bug Report
-description: File a bug report
+description: File a bug report relating to the @stripe/stripe-js loading wrapper itself.
 title: "[BUG]: "
 labels: ["bug"]
 body:
@@ -7,22 +7,27 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+
+        This project is a very thin loading wrapper around Stripe.js. Please only file issues here that you believe represent bugs with the loader, not Stripe.js itself.
+
+        If you're having general trouble with Stripe.js or your Stripe integration, please reach out to us using the form at https://support.stripe.com/email or come chat with us on the Stripe Discord server. We're very proud of our level of service, and we're more than happy to help you out with your integration.
   - type: textarea
     id: what-happened
     attributes:
       label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      description: Please include what you were trying to accomplish, and what happened instead.
+      value: ""
     validations:
       required: true
-  - type: dropdown
-    id: browsers
+  - type: input
+    id: env
     attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+      label: Environment
+      description: What browser and operating system are you seeing this issue on? What versions?
+      placeholder: Chrome 99.0.4844.51 on macOS 12.2.1
+  - type: input
+    id: repro
+    attributes:
+      label: Reproduction
+      description: Please include a link to a runnable reproduction, if you can. This will greatly increase the likelihood we are able to help. A Glitch or CodeSandbox link is perfect.
+      placeholder: https://glitch.com/edit/#!/your-project
